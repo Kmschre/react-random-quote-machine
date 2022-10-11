@@ -4,23 +4,12 @@ import COLORS_ARRAY from "./colorsArray.js";
 import QUOTES_DB_ARRAY from "./quotesDBArray";
 
 
-// let quotesDBUrl = "https://raw.githubusercontent.com/benhoneywill/stoic-quotes/master/data/quotes.json"
-
-
-
 function App() {
   const [quote, setQuote] = useState("Day by day, what you do is who you become.")
   const [author, setAuthor] = useState('Heraclitus')
   const [quotesArray, setQuotesArray] = useState (null)
   const [accentColor, setAccentColor] = useState ('#ffe4e1')
 
-
- /* const fetchQuotes = async (url) => {
-    const response = await fetch(url)
-    const parsedJSON = await response.json()
-    setQuotesArray(parsedJSON.quotes)
-  }
-  */
 
   const fetchQuotes = () => {
     setQuotesArray(QUOTES_DB_ARRAY.quotes)
