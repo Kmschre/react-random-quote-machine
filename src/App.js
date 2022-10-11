@@ -28,22 +28,23 @@ function App() {
 
      setQuote(randomQuoteInfo.text);
      setAuthor(randomQuoteInfo.author);
-  }
+
+}
 
 
   return (
     <div className="App">
       <header className="App-header">
-        <wrapper id="quote-box">
+        <div id="quote-box">
         <p id="text">
           "{quote}"
         </p>
-        <p>
+        <p id="author">
           - {author}
         </p>
-        <button onClick={() => randomizeQuote()}>New Quote</button>
-        
-        </wrapper>
+        <button id="new-quote" onClick={() => randomizeQuote()}>New Quote</button>
+          <a id="tweet-quote" href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)} target="_blank">Tweet</a>
+        </div>
       </header>
     </div>
   );
