@@ -1,17 +1,56 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
 .App {
   text-align: center;
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
+  #quote-box {
+    background-color: rgb(65, 63, 63);
+    color: black;
+    @include border-radius(15px);
+    width: 65%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 22px;
+    font-family: 'Courier New',Courier, monospace;
+    font-weight: 500;
+    #author {
+      align-self: flex-end;
+      padding-right: 10%;
+      font-size: 18px;
+    }
+    #inputs {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    #new-quote {
+      border: none;
+      @include border-radius(10px);
+      padding: 10px;
+      font-family: 'Courier New',Courier, monospace;
+      font-size: 70%;
+    }
+
   }
+  .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 
 
-
+}

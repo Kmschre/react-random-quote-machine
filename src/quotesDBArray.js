@@ -1,4 +1,4 @@
-{
+const QUOTES_DB_ARRAY = {
   "quotes": [
     {
       "text": "If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, \"He was ignorant of my other faults, else he would not have mentioned these alone.\"",
@@ -7095,6 +7095,48 @@
     {
       "text": " Lead me, O Zeus, and thou O Destiny, the way that I am bid by you to go: To follow I am ready. If I choose not, I make myself a wretch, and still must follow.",
       "author": "Cleanthes"
-    }
+    },
+    {
+      "text": "We suffer more often in imagination than in reality.",
+      "author": "Seneca"
+  }, 
+  {
+    "text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+    "author": "Albert Einstein"
+  },
+  {
+    "text": "The happiness of your life depends upon the quality of your thoughts.",
+    "author": "Marcus Aurelius"
+  },
+  {
+    "text": "The things that make me different are the things that make me.",
+    "author": "Piglet\nWinnie the Pooh"
+  },
+  {
+    "text": "Don't take yoursef so seriously. You're just a monkey with a plan.",
+    "author": "Naval Ravikant"
+  },
+  {
+    "text": "Each time we face our fear, we gain strength, courage, and confidence in the doing.",
+    "author": "Theodore Roosevelt"
+  },
+  {
+    "text": "Day by day, what you do is who you become.",
+    "author": "Heraclitus"
+  },
+  {
+    "text": "Be happy for this moment. This moment is your life.",
+    "author": "Omar Khayyam"
+  },
+  {
+    "text": "Do or do not. There is no try.",
+    "author": "Yoda\nStar Wars"
+  },
+  {
+    "text": "First, think. Second, dream. Third, believe. And finally, dare.",
+    "author": "Walt Disney"
+  },
   ]
 }
+
+export default QUOTES_DB_ARRAY
