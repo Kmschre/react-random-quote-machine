@@ -12,7 +12,7 @@ function App() {
   const [quote, setQuote] = useState("Day by day, what you do is who you become.")
   const [author, setAuthor] = useState('Heraclitus')
   const [quotesArray, setQuotesArray] = useState (null)
-  const [accentColor, setAccentColor] = useState ('#d2daff')
+  const [accentColor, setAccentColor] = useState ('#ffe4e1')
 
 
  /* const fetchQuotes = async (url) => {
@@ -40,8 +40,6 @@ function App() {
      setQuote(randomQuoteInfo.text);
      setAuthor(randomQuoteInfo.author);
 
-       
-  
 }
 
   return (
