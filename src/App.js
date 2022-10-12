@@ -12,7 +12,8 @@ function App() {
 
 
   const fetchQuotes = () => {
-    setQuotesArray(QUOTES_DB_ARRAY.quotes)
+    setQuotesArray(QUOTES_DB_ARRAY.quotes);
+    
   }
   
   useEffect(()=> {
@@ -29,15 +30,19 @@ function App() {
      setQuote(randomQuoteInfo.text);
      setAuthor(randomQuoteInfo.author);
 
-}
+  }
 
   return (
     <div className="App">
-      <header className="App-header" style={{backgroundColor:accentColor, color:accentColor}}>
+      <header id="body" className="App-header" style={{backgroundColor:accentColor, color:accentColor}}>
         <div id="quote-box">
-        <p id="text" style={{color:accentColor}}>
-          {quote}
-        </p>
+          <wrapper id="align-quote">
+            <i class="fa-solid fa-quote-left" style={{color:accentColor}} ></i>
+            <p id="text" style={{color:accentColor}}>
+              {quote}
+            </p>
+            <i class="fa-solid fa-quote-right" style={{color:accentColor}}></i>
+          </wrapper>
         <p id="author" style={{color:accentColor}}>
           - {author}
         </p>

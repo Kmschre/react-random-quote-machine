@@ -9,6 +9,15 @@ var COLORS_ARRAY = [
     '#FFBF86',
     '#FFE4E1',
     '#F0FFF0',
+    '#fbe4ff',
+    '#dcd3ff',
+    '#aff8db',
+    '#c4faf8',
+    '#ffcbc1',
+    '#afcbff',
+    '#ace7ff',
+    '#ffc9de',
+    '#e7cfcb',
   ];
 
 

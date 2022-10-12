@@ -5,10 +5,12 @@
   -ms-border-radius: $radius;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;500;600&display=swap');
+
 .App {
   text-align: center;
   #quote-box {
-    background-color: rgb(65, 63, 63);
+    background-color: rgb(60, 60, 61);
     color: black;
     @include border-radius(15px);
     width: 66%;
@@ -16,13 +18,21 @@
     flex-direction: column;
     padding: 20px;
     margin: 10px;
-    font-size: 22px;
-    font-family: 'Courier New',Courier, monospace;
+    font-size: 20px;
+    font-family: 'Noto Serif Gujarati', serif;
     font-weight: 500;
+    #align-quote {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2px;
+    }
     #author {
       align-self: flex-end;
       padding-right: 10%;
       font-size: 18px;
+      font-style:italic;
     }
     #inputs {
       display: flex;
@@ -35,8 +45,9 @@
       border: none;
       @include border-radius(10px);
       padding: 10px;
-      font-family: 'Courier New',Courier, monospace;
-      font-size: 70%;
+      font-size: 68%;
+      font-family: 'Noto Serif Gujarati', serif;
+      font-weight: 700;
     }
 
   }
