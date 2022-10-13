@@ -49,7 +49,7 @@ function App() {
           <div id="inputs">
             <button id="new-quote" onClick={() => randomizeQuote()} style={{backgroundColor:accentColor}}>New Quote</button>
             <a id="tweet-quote" href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)} target="_blank" rel="noreferrer">
-            <i id="tweet-icon" className="fa-brands fa-twitter fa-xl" style={{color:accentColor}}></i>
+              <i id="tweet-icon" className="fa-brands fa-twitter fa-xl" style={{color:accentColor}}></i>
             </a>
           </div>
         </div>
@@ -59,3 +59,4 @@ function App() {
 }
 
 export default App;
+
