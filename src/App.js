@@ -5,7 +5,7 @@ import QUOTES_DB_ARRAY from "./quotesDBArray";
 
 
 function App() {
-  const [quote, setQuote] = useState("Day by day, what you do is who you become.")
+  const [quote, setQuote] = useState(" Day by day, what you do is who you become.")
   const [author, setAuthor] = useState('Heraclitus')
   const [quotesArray, setQuotesArray] = useState (null)
   const [accentColor, setAccentColor] = useState ('#ffe4e1')
